@@ -1,5 +1,3 @@
-import { useMemo, useCallback } from 'react'
-
 type SoundButtonProps = {
 	label: string
 	fileUrl: string
