@@ -12,8 +12,10 @@ export const RandomButton = ({ urls }: RandomButtonProps) => {
   }
 
 	return (
-		<button type="button" className="random-button" onClick={getRandomAudio}>
-			RANDOM
-		</button>
+		<div>
+			<button type="button" className="random-button" onClick={getRandomAudio}>
+				RANDOM
+			</button>
+		</div>
 	)
 }
