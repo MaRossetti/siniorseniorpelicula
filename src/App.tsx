@@ -32,7 +32,6 @@ function App() {
     seniorespobrev2: `/seniorespobrev2.ogg`,
     siniorseniorpelicula: `/siniorseniorpelicula.ogg`,
     tenemoskirnos: `/tenemoskirnos.ogg`,
-    tenemosqueirnosv2: `/tenemosqueirnosv2.ogg`,
     yaestabienporfavor: `/yaestabienporfavor.ogg`,
 
   }
@@ -51,7 +50,6 @@ function App() {
       <SoundButton label="Corred insensatos!" fileUrl={audioList.corredinsensatos} />
       <SoundButton label="Dios" fileUrl={audioList.dios} />
       <SoundButton label="Dios x 3" fileUrl={audioList.diosdiosdios} />
-      <SoundButton label="Tenemos que irnos 2" fileUrl={audioList.tenemosqueirnosv2} />
       <SoundButton label="El tio de los melindros" fileUrl={audioList.eltiodelosmelindros} />
       <SoundButton label="Hay o no hay" fileUrl={audioList.hayonohay} />
       <SoundButton label="La pulicia" fileUrl={audioList.lapulicia} />
