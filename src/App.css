@@ -51,12 +51,26 @@ h1::after {
   background: linear-gradient(90deg, rgba(251, 184, 255, 0.92), rgba(147, 197, 253, 0.9));
 }
 
-#root > div {
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root > div,
+#root > button {
   width: min(300px, 100%);
 }
 
 #root > div button {
   width: 100%;
+}
+
+#root > button {
+  width: min(300px, 100%);
+}
+
+#root button {
   min-height: 72px;
   border: 0;
   border-radius: 999px;
@@ -74,7 +88,7 @@ h1::after {
   box-shadow: 0 24px 50px rgba(109, 76, 255, 0.22);
 }
 
-#root > div button::before {
+#root button::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -83,15 +97,26 @@ h1::after {
   pointer-events: none;
 }
 
-#root > div button:hover {
+#root button:hover {
   transform: translateY(-2px);
   box-shadow: 0 30px 55px rgba(109, 76, 255, 0.28);
   background: linear-gradient(135deg, #8f76ff 0%, #d8a9ff 100%);
 }
 
-#root > div button:focus-visible {
+#root button:focus-visible {
   outline: 3px solid rgba(170, 59, 255, 0.45);
   outline-offset: 4px;
+}
+
+#root button.random-button {
+  background: linear-gradient(135deg, #22d3ee 0%, #14b8a6 40%, #0f766e 100%);
+  box-shadow: 0 24px 60px rgba(20, 184, 166, 0.35);
+}
+
+#root button.random-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7dd3fc 0%, #2dd4bf 45%, #14b8a6 100%);
+  box-shadow: 0 30px 70px rgba(20, 184, 166, 0.45);
 }
 
 @media (max-width: 720px) {

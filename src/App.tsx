@@ -1,5 +1,6 @@
 import './App.css'
 import { SoundButton } from './components/SoundButton/SoundButton.tsx'
+import { RandomButton } from './components/RandomButton/RandomButton.tsx'
 
 function App() {
 
@@ -36,23 +37,31 @@ function App() {
 
   }
 
+ 
+
+
+
   return (
     <>
       <h1>Sinior Sénior película (dios)</h1>
+      <RandomButton urls={Object.values(audioList)} />
       <SoundButton label="Rapido senior" fileUrl={audioList.rapidosenior} />
       <SoundButton label="Tenemos que irnos" fileUrl={audioList.tenemosqueirnos} />
       <SoundButton label="Al campo y..." fileUrl={audioList.alcampoyacriar} />
       <SoundButton label="Corred insensatos!" fileUrl={audioList.corredinsensatos} />
       <SoundButton label="Dios" fileUrl={audioList.dios} />
       <SoundButton label="Dios x 3" fileUrl={audioList.diosdiosdios} />
+      <SoundButton label="Tenemos que irnos 2" fileUrl={audioList.tenemosqueirnosv2} />
       <SoundButton label="El tio de los melindros" fileUrl={audioList.eltiodelosmelindros} />
       <SoundButton label="Hay o no hay" fileUrl={audioList.hayonohay} />
       <SoundButton label="La pulicia" fileUrl={audioList.lapulicia} />
       <SoundButton label="Nos roban las patatas" fileUrl={audioList.nosrobanlaspatatas} />
+      <SoundButton label="Nos puedes pasar" fileUrl={audioList.nopuedespasar} />
       <SoundButton label="No tocar los cojones" fileUrl={audioList.notocarloscojones} />
       <SoundButton label="Película grande" fileUrl={audioList.peliculagrande} />
       <SoundButton label="Película grande o pequeña" fileUrl={audioList.peliculagrandeopequena} />
       <SoundButton label="Por favor, señor" fileUrl={audioList.porfavorsinior} />
+      <SoundButton label="Tenemos Kirnos" fileUrl={audioList.tenemoskirnos} />
       <SoundButton label="Por favor, soy muy pobre" fileUrl={audioList.porfavorsoymuypobre} />
       <SoundButton label="Prohibido tocar los cojones" fileUrl={audioList.prohibidotocarloscojones} />
       <SoundButton label="Pulicia" fileUrl={audioList.pulicia} />
