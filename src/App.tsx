@@ -6,8 +6,8 @@ function App() {
   const baseUrl = '/public/audios/'
 
   const audioList = {
-    rapidosenior: `${baseUrl}rapidosenior.ogg`,
-    tenemosqueirnos: `${baseUrl}tenemosqueirnos.ogg`,
+    rapidosenior: `/rapidosenior.ogg`,
+    tenemosqueirnos: `/tenemosqueirnos.ogg`,
   }
 
   return (
