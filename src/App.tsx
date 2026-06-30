@@ -8,7 +8,7 @@ function App() {
   const audioList = {
     rapidosenior: `/rapidosenior.ogg`,
     tenemosqueirnos: `/tenemosqueirnos.ogg`,
-    alcamnpoyacorrer: `/alcamnpoyacorrer.ogg`,
+    alcampoyacriar: `/alcampoyacriar.ogg`,
     corredinsensatos: `/corredinsensatos.ogg`,
     dios: `/dios.ogg`,
     diosdiosdios: `/diosdiosdios.ogg`,
@@ -41,7 +41,7 @@ function App() {
       <h1>Sinior Sénior película (dios)</h1>
       <SoundButton label="Rapido senior" fileUrl={audioList.rapidosenior} />
       <SoundButton label="Tenemos que irnos" fileUrl={audioList.tenemosqueirnos} />
-      <SoundButton label="Al campo y..." fileUrl={audioList.alcamnpoyacorrer} />
+      <SoundButton label="Al campo y..." fileUrl={audioList.alcampoyacriar} />
       <SoundButton label="Corred insensatos!" fileUrl={audioList.corredinsensatos} />
       <SoundButton label="Dios" fileUrl={audioList.dios} />
       <SoundButton label="Dios x 3" fileUrl={audioList.diosdiosdios} />
