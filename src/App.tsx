@@ -2,11 +2,19 @@ import './App.css'
 import { SoundButton } from './components/SoundButton/SoundButton.tsx'
 
 function App() {
+
+  const baseUrl = '/src/assets/audio/'
+
+  const audioList = {
+    rapidosenior: `${baseUrl}rapidosenior.ogg`,
+    tenemosqueirnos: `${baseUrl}tenemosqueirnos.ogg`,
+  }
+
   return (
     <>
       <h1>Sinior Sénior película (dios)</h1>
-      <SoundButton label="Rapido senior" fileUrl='/src/assets/audio/rapidosenior.ogg' />
-      <SoundButton label="Tenemos que irnos" fileUrl='/src/assets/audio/tenemosqueirnos.ogg' />
+      <SoundButton label="Rapido senior" fileUrl={audioList.rapidosenior} />
+      <SoundButton label="Tenemos que irnos" fileUrl={audioList.tenemosqueirnos} />
     </>
   )
 }
