@@ -3,7 +3,7 @@ import { SoundButton } from './components/SoundButton/SoundButton.tsx'
 
 function App() {
 
-  const baseUrl = '/public/audios/'
+  //const baseUrl = '/public/audios/'
 
   const audioList = {
     rapidosenior: `/rapidosenior.ogg`,
